@@ -29,7 +29,7 @@ Route::post('register', [UserController::class, 'store']);
 Route::post('logout', [UserController::class, 'logout']);
 
 Route::get('admin/login', [AdminController::class, 'login']);
-Route::post('admin/login', [AdminController::class, 'authenticate']);
+Route::post('admin/login', [AdminController::class, 'authenticate'])->name('login');
 Route::get('admin', [AdminController::class, 'admin']);
 Route::post('admin', [AdminController::class, 'changeTeacher']);
 

@@ -22,6 +22,7 @@ class AdminController extends Controller
             session()->put('admin', true);
             return redirect('/admin');
         }
+
         return back()->with('message', 'Incorrect Data');
     }
 
